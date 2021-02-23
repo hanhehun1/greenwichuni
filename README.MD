@@ -1,1 +1,1 @@
-# Traning System
+Training Management System
