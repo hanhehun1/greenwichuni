@@ -212,6 +212,19 @@ if (isset($_POST['role'])) {
                   <span class="form-bar"></span>
                   <label class="float-label">Password</label>
                 </div>
+                <?php if($error): ?>
+                <div class="row m-t-30">
+                  <div class="col-md-12">
+                    <div class="alert alert-danger icons-alert">
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <i class="icofont icofont-close-line-circled"></i>
+                      </button>
+                      <p><strong><?=$error;?>!</strong>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <?php endif; ?>
                 <div class="row m-t-30">
                   <div class="col-md-12">
                     <button type="button" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20" onclick="$('#frmChange').submit();">LOGIN</button>
